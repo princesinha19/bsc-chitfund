@@ -341,8 +341,12 @@ export default function ViewPool() {
                                         <u>Auction Done</u>
                                         <span> :</span>
                                         <span className="float-right">
-                                            {state.totalParticipants > 1 ?
-                                                state.auctionCount - 1
+                                            {state.totalParticipants > 1 ? (
+                                                time.currentUnixTime() > state.autionStartTimestamp +
+                                                    (state.auctionInterval * 3600) ?
+                                                    state.auctionCount :
+                                                    0
+                                                )
                                                 : 0
                                             }
                                         </span>

@@ -80,7 +80,7 @@ export default function TokenFaucet() {
     };
 
     return (
-        <div style={{ marginTop: "8%" }}>
+        <div style={{ marginTop: "7%" }}>
             {showMetamaskError ?
                 <AlertModal
                     open={showMetamaskError}
