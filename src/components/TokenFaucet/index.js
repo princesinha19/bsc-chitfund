@@ -29,9 +29,9 @@ export default function TokenFaucet() {
         }
     ]);
 
-    const handleGetTestTokens = (tokenAddress) => {
+    const handleGetTestTokens = () => {
         window.tokenFaucet.methods
-            .claimTestTokens(tokenAddress)
+            .claimTestTokens()
             .send()
             .on('transactionHash', () => {
                 setProcessing(true);
@@ -49,11 +49,10 @@ export default function TokenFaucet() {
     }
 
     const checkIsAlreadyClaimed = () => {
-        tokens.forEach(async (token, i) => {
+        tokens.forEach(async (_, i) => {
             const status = await window.tokenFaucet
-                .methods.alreadyClaimed(
+                .methods.isAlreadyClaimed(
                     window.userAddress,
-                    token.address,
                 ).call();
 
             tokens[i].status = status;
@@ -81,7 +80,7 @@ export default function TokenFaucet() {
     };
 
     return (
-        <div style={{marginTop: "8%"}}>
+        <div style={{ marginTop: "8%" }}>
             {showMetamaskError ?
                 <AlertModal
                     open={showMetamaskError}
@@ -154,9 +153,7 @@ export default function TokenFaucet() {
                                             <Button
                                                 style={{ marginTop: '10px' }}
                                                 variant="success"
-                                                onClick={() =>
-                                                    handleGetTestTokens(token.address)
-                                                }
+                                                onClick={() => handleGetTestTokens()}
                                             >
                                                 {processing ?
                                                     <div className="d-flex align-items-center">

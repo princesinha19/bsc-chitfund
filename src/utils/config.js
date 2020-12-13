@@ -6,5 +6,5 @@ export const config = {
     poolFactoryAbi: poolFactory.default,
     poolFactoryAddress: "0xaD524FbAFe042543613576713886b807AEb41270",
     tokenFaucetAbi: tokenFaucet.default,
-    tokenFaucetAddress: "0x9464f9c0E6a1c47Cacf4D76EA580f0283d187347",
+    tokenFaucetAddress: "0x58A77d051EAf555C236680048c8E34F4aC71698D",
 }
