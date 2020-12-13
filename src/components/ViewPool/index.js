@@ -135,10 +135,6 @@ export default function ViewPool() {
                 const auctionCount = await contractInstance
                     .methods.getAuctionCount().call();
 
-                // const userCurrentBid = await marlin.fetchUserBid(
-                //     poolAddress, window.userAddress, auctionCount
-                // );
-
                 const highestBidAmount = await contractInstance
                     .methods.highestBidAmount(auctionCount).call();
 
@@ -215,7 +211,6 @@ export default function ViewPool() {
                     poolCloseTimestamp,
                     bep20Balance,
                     maxBidAmount,
-                    userCurrentBid: 0,
                     claimedFinalYield,
                     minBidAmount,
                     depositAmount,
@@ -320,7 +315,7 @@ export default function ViewPool() {
                         <Card className="mx-auto view-pool-card">
                             <Card.Body style={{ textAlign: "left", fontWeight: "bold" }}>
                                 <p className="view-pool-header">
-                                    <u>Chit Fund Pool</u>
+                                    <u>Venus Chit Fund Pool</u>
                                 </p>
 
                                 <Row style={{ paddingBottom: "20px" }}>
@@ -347,7 +342,7 @@ export default function ViewPool() {
                                         <span> :</span>
                                         <span className="float-right">
                                             {state.totalParticipants > 1 ?
-                                                state.auctionCount
+                                                state.auctionCount - 1
                                                 : 0
                                             }
                                         </span>

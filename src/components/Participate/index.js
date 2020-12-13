@@ -62,7 +62,7 @@ export default function Participate({
                     setSuccessModal({
                         open: true,
                         msg: "Congratulations 🎉 !! " +
-                            "You have successfully deposited collateral !!",
+                            "You have successfully deposited your token !!",
                     });
                 })
                 .catch((error) => {

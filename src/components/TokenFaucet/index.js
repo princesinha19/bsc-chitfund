@@ -119,7 +119,7 @@ export default function TokenFaucet() {
 
                         <Card.Body>
                             <div style={{ marginBottom: "30px" }}>
-                                <strong>Don't have Binance Smart Chain (BSC) Token ?</strong>
+                                <strong>Don't have Binance Smart Chain (BNB) Token ?</strong>
                                 <br />Please use <a
                                     target="_blank"
                                     rel="noopener noreferrer"
@@ -146,7 +146,7 @@ export default function TokenFaucet() {
                                     {!token.status ?
                                         <Card.Body>
                                             <p>
-                                                You can get 100 Test <strong>{token.name} </strong>
+                                                You can get 100 Test Venus <strong>{token.name} </strong>
                                             (one time) by clicking below button:
                                             <br />
                                             </p>

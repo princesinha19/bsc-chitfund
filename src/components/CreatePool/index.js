@@ -126,7 +126,7 @@ export default function CreatePool() {
                         <Card.Body>
                             <Row style={{ marginTop: "10px" }}>
                                 <Col className="text-header">
-                                    Collateral Amount:
+                                    Deposit Amount:
                                 </Col>
                                 <Col style={{ paddingLeft: "0px" }}>
                                     <Form.Control
