@@ -1,0 +1,28 @@
+{
+  "files": {
+    "main.css": "/bsc-chitfund/static/css/main.fad53284.chunk.css",
+    "main.js": "/bsc-chitfund/static/js/main.0cd134f7.chunk.js",
+    "main.js.map": "/bsc-chitfund/static/js/main.0cd134f7.chunk.js.map",
+    "runtime-main.js": "/bsc-chitfund/static/js/runtime-main.88ff11a4.js",
+    "runtime-main.js.map": "/bsc-chitfund/static/js/runtime-main.88ff11a4.js.map",
+    "static/css/2.8aa5a7f8.chunk.css": "/bsc-chitfund/static/css/2.8aa5a7f8.chunk.css",
+    "static/js/2.072d4af4.chunk.js": "/bsc-chitfund/static/js/2.072d4af4.chunk.js",
+    "static/js/2.072d4af4.chunk.js.map": "/bsc-chitfund/static/js/2.072d4af4.chunk.js.map",
+    "index.html": "/bsc-chitfund/index.html",
+    "precache-manifest.5b436755bf8740a9fd5e88c12c244023.js": "/bsc-chitfund/precache-manifest.5b436755bf8740a9fd5e88c12c244023.js",
+    "service-worker.js": "/bsc-chitfund/service-worker.js",
+    "static/css/2.8aa5a7f8.chunk.css.map": "/bsc-chitfund/static/css/2.8aa5a7f8.chunk.css.map",
+    "static/css/main.fad53284.chunk.css.map": "/bsc-chitfund/static/css/main.fad53284.chunk.css.map",
+    "static/js/2.072d4af4.chunk.js.LICENSE.txt": "/bsc-chitfund/static/js/2.072d4af4.chunk.js.LICENSE.txt",
+    "static/media/bsc.svg": "/bsc-chitfund/static/media/bsc.d8e9b0e1.svg",
+    "static/media/logo.png": "/bsc-chitfund/static/media/logo.b7f124e8.png",
+    "static/media/metamask.png": "/bsc-chitfund/static/media/metamask.e9ada72b.png"
+  },
+  "entrypoints": [
+    "static/js/runtime-main.88ff11a4.js",
+    "static/css/2.8aa5a7f8.chunk.css",
+    "static/js/2.072d4af4.chunk.js",
+    "static/css/main.fad53284.chunk.css",
+    "static/js/main.0cd134f7.chunk.js"
+  ]
+}
